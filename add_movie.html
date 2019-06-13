@@ -1,0 +1,49 @@
+{% extends 'MovieReview/header.html'%}
+
+{% block content %}
+    <div class = "container">
+        <div class= "contact-form medium-padding120">
+
+           <form class= "contact-form method='post" action= "/add_movie_form_submission/">
+               {% csrf_token %}
+               <div class="row">
+                   <div class= "col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <input name= "movie_name" class= "input-standard-grey" placeholder="Name"/>
+                   </div>
+
+                   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                       <input type="number" name="phone_number" class= "input-standard-grey" placeholder="Phone Number"/>
+                   </div
+
+                   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                       <input type="text" name="email" class= "input-standard-grey" placeholder="email"/>
+                   </div>                   
+
+                 </div>
+
+                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 "
+                         <input type="file" name="pic" 
+                         accept="image/*">
+                      </div>
+                            
+
+                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 "
+                         <input type="file" name="video" 
+                         accept="video/*">
+                      </div>
+
+                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 "
+                          <select name= "option">
+                                <option value="CSE">CSE</option>
+                             <option value="ECE">ECE</option>
+                             <option value="IT">IT</option>
+                           </select> 
+                      </div> 
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                       <input type="submit"  Value= "Submit">
+                   </div>
+
+                    </form>
+                    </div>
+                    </div>
+                    
